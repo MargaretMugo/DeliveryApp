@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.models import Group
-from .models import Snippet
+from .models import Delivery
 from django.urls import path
 from django.http import HttpResponseRedirect
 from django.utils.html import format_html
@@ -8,7 +8,7 @@ from django.utils.html import format_html
 admin.site.site_header = 'Delivery App'
 
 
-class SnippetAdmin(admin.ModelAdmin):
+class DeliveryAdmin(admin.ModelAdmin):
     list_display = ('title', 'font_size_html_display')
     list_filter = ('created',)
     change_list_template = 'admin/deliveries/delivery_change_list.html'
@@ -34,5 +34,5 @@ class SnippetAdmin(admin.ModelAdmin):
         )
 
 
-admin.site.register(Snippet)
+admin.site.register(Delivery)
 admin.site.unregister(Group)
