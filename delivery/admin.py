@@ -5,7 +5,7 @@ from django.urls import path
 from django.http import HttpResponseRedirect
 from django.utils.html import format_html
 
-admin.site.site_header = 'Delivery Admin'
+admin.site.site_header = 'Delivery App'
 
 
 class SnippetAdmin(admin.ModelAdmin):
