@@ -31,14 +31,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'customer',
+    'DeliveryApp.apps.SuitConfig',
     'django.contrib.admin',
     'django.contrib.auth',
-    'delivery',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'customer',
+    'delivery'
 ]
 
 MIDDLEWARE = [
