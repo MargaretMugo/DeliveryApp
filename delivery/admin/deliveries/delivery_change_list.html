@@ -1,16 +1,16 @@
 {% extends 'admin/change_list.html' %} {% block object-tools %}
-<form id="fontsize-form" method="post">
+<form id="quantity-form" method="post">
     {% csrf_token %}
-    <input name="fontsize" class="vTextField">
+    <input name="quantity" class="vTextField">
     <button class="button" type="submit">Change Delivery</button>
 </form>
 <br>
 
 <script>
-    let fontSizeForm = document.querySelector('#fontsize-form')
-    fontSizeForm.querySelector('input[name="fontsize"]').addEventListener('change', function(e) {
-        let fontsize = e.target.value
-        fontSizeForm.action = 'fontsize/' + fontSize + '/'
+    let quantityForm = document.querySelector('#quantity-form')
+    quantityForm.querySelector('input[name="quantity"]').addEventListener('change', function(e) {
+        let quantity = e.target.value
+        quantityForm.action = 'quantity/' + quantity + '/'
     })
 </script>
 
