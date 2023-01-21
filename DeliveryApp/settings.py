@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'customer',
-    'delivery'
+    'delivery',
+    'driver'
 ]
 
 MIDDLEWARE = [
