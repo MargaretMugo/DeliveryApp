@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Customer
+from .models import Customer, MenuItem, Category, OrderModel
 
 
 class CustomerAdmin(admin.ModelAdmin):
@@ -8,6 +8,9 @@ class CustomerAdmin(admin.ModelAdmin):
     def get_urls(self):
         urls = super().get_urls()
         return urls
-
-
 admin.site.register(Customer)
+
+admin.site.register(MenuItem)
+admin.site.register(Category)
+admin.site.register(OrderModel)
+
