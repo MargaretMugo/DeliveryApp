@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Delivery(models.Model):
-    delivery_name = models.CharField(max_length=100)
+    delivery_name = models.CharField(max_length=30)
     description = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     quantity = models.IntegerField()
