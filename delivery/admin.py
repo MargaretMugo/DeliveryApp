@@ -9,7 +9,7 @@ admin.site.site_header = 'Delivery App'
 
 
 class DeliveryAdmin(admin.ModelAdmin):
-    list_display = ('title', 'font_size_html_display')
+    list_display = ('delivery_name', 'font_size_html_display')
     list_filter = ('created',)
     change_list_template = 'admin/deliveries/delivery_change_list.html'
 

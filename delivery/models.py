@@ -2,13 +2,13 @@ from django.db import models
 
 
 class Delivery(models.Model):
-    title = models.CharField(max_length=100)
-    body = models.TextField()
+    delivery_name = models.CharField(max_length=30)
+    description = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
-    font_size = models.IntegerField()
+    quantity = models.IntegerField()
 
     def __str__(self):
-        return self.title
+        return self.delivery_name
 
     def body_preview(self):
-        return self.body[:50]
+        return self.description[:50]
